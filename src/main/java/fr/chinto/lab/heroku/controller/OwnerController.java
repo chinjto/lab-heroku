@@ -3,10 +3,12 @@ package fr.chinto.lab.heroku.controller;
 import fr.chinto.lab.heroku.entity.Car;
 import fr.chinto.lab.heroku.entity.Owner;
 import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.web.bind.annotation.*;
 
-@RestController("/owners")
+@RequestMapping("/owners")
+@RequiredArgsConstructor
 public class OwnerController {
 
     @NonNull

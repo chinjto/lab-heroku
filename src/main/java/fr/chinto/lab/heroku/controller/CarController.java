@@ -6,7 +6,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.web.bind.annotation.*;
 
-@RestController("/cars")
+@RequestMapping("/cars")
 @RequiredArgsConstructor
 public class CarController {
 
