@@ -2,15 +2,13 @@ package fr.chinto.lab.heroku.entity;
 
 import lombok.Data;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.OneToMany;
 import java.util.List;
 
 @Data
 @Entity
-public class Owner {
-
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+public class Owner extends GenericEntity {
 
     private String firstName;
 

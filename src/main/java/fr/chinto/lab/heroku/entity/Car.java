@@ -6,10 +6,7 @@ import javax.persistence.*;
 
 @Data
 @Entity
-public class Car {
-
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+public class Car extends GenericEntity {
 
     private String registryNumber;
 
